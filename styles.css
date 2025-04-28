@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+  user-select: none;
+}
+
+body {
+  width: 30%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.selector {
+  font-size: 1.1rem;
+  border: 2px solid black;
+  width: 200px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 12px;
+}
+
+.selector:hover {
+  cursor: pointer;
+}
+
+.drop-arrow {
+  transition: transform 0.3s;
+  transform: rotate(90deg);
+  font-size: 1.3rem;
+}
+
+.items {
+  margin-top: 10px;
+  border: 2px solid black;
+  border-radius: 12px;
+  width: 200px;
+}
+
+.items div {
+  font-size: 1.05rem;
+  width: 198px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.items div:hover {
+  color: white;
+  background-color: black;
+}
+
+.items div:not(:first-child) {
+  border-top: 2px solid black;
+}
+
+.items div:first-child {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.items div:last-child {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.checkmark {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.rotate {
+  transform: rotate(-90deg);
+}
